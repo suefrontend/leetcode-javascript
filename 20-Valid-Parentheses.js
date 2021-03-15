@@ -8,9 +8,9 @@ var isValid = function(s) {
   let stack = [];
 
   for(let char of s) {
-    console.log(char)
+
     if(bracket[char]) {
-      console.log("bracket[char]", bracket[char]);
+
       stack.push(bracket[char])
     } else {
       // stack.pop = stackの最後の文字

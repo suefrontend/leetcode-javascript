@@ -4,8 +4,6 @@ const reformatDate = function(date) {
 
   const str = date.split(' ');
 
-  console.log(str)
-
   // Dealing with date
   // Last two strings are unnecessary: st, nd
   // So extract
@@ -35,8 +33,7 @@ const reformatDate = function(date) {
     'Dec': 12
   }
 
-  console.log(str[1])
+
   return str[2]+months[str[1]]+str[0]
 }
 reformatDate("20th Oct 2052");
-console.log(months['Dec'])

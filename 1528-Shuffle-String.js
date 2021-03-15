@@ -23,7 +23,7 @@ var restoreString = function (s, indices) {
       // [ "l", "e", "e", "", "c", "o", "d", "e" ]
       // [ "l", "e", "e", "t", "c", "o", "d", "e" ]
 
-      console.log(arr)
+
   }
 
   return arr.join('');

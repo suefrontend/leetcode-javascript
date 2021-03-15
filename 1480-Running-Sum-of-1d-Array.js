@@ -6,10 +6,10 @@ var runningSum = function(nums) {
   for(let i = 0; i < nums.length; i++) {
     // 0 + 1
     sum = sum + nums[i];
-    console.log(sum, "+", nums[i])
+
 
     arr.push(sum);
-    console.log(arr)
+
   }
   return arr;
 
