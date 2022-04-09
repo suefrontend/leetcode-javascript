@@ -1,13 +1,14 @@
 var twoSum = function (nums, target) {
-	var hash = {};
+	var obj = {};
 
 	for (var i = 0; i < nums.length; i++) {
-		const n = nums[i]; // grab the current number `n`.
-		if (hash[target - n] !== undefined) {
-			// check if the number we need to add to `n` to reach our target has been seen:
-			return [hash[target - n], i]; // grab the index of the seen number, and the index of the current number
+		var complement = target - nums[i];
+
+		if (complement in obj) {
+			return [obj[complement], i];
+		} else {
+			obj[nums[i]] = i;
 		}
-		hash[n] = i; // update our hash to include the. number we just saw along with its index.
 	}
 	return [];
 };
