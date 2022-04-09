@@ -69,7 +69,7 @@ Map will look like this:
   2: 2,
   4: 6
 }
-
+twoSum([2,7,11,15], 9)
 ```
 
 ## Whole Code
@@ -77,14 +77,22 @@ Map will look like this:
 ```
 var twoSum = function(nums, target) {
 
-  var obj = new Map();
+  var obj = {};
 
-  var complement = target - nums[index];
+  for (var i = 0; i < nums.length; i++) {
+    var complement = target - nums[i];
 
-  if (obj.has(complement)) {
-    return [obj.get(nums[i]), i]
-  }  else {
-    obj.set(complement, i);
+    if(complement in obj) {
+      console.log("complement[i]", complement[i])
+      return [obj[complement[i]], i]
+    } else {
+      obj[nums[i]] = i;
+    }
+
+      console.log("obj[nums[i]]", obj[nums[i]])
+  console.log("complement", complement)
+  console.log("obj", obj)
   }
+  return [];
 }
 ```
