@@ -6,12 +6,12 @@ In this question, I need to return indices of two integers in an array which can
 
 ## Solution
 
-1. To solve this problem, I'm going to use Map. Map is an object which holds key and value. First, create an empty Map which will store data.
+1. First, create an empty object which will store data. Key will be the actual integer of an array, and value will be its index.
 
 ```
 var twoSum = function(nums, target) {
 
-  var obj = new Map();
+  var obj = {};
 
 ```
 
@@ -24,7 +24,7 @@ var twoSum = function(nums, target) {
 
 3.
 
-Calculate the difference of each number and target number. This will be the **key** of the Map.
+Calculate the difference of each number and target number. This will be the **key** of the object.
 
 ```
   var complement = target - nums[index];
@@ -32,44 +32,36 @@ Calculate the difference of each number and target number. This will be the **ke
 
 Pair up the key with the index.
 
-If you find the same number as complement, it's a match. That is the number we want the index of. You can search if the number exists in Map by `obj.has()`, which will return true if the key exists.
+If you find a key which is the same number as complement, that is the number we want the index of. You can use **in operator** to check it.
 
 ```
-  if (obj.has(complement)) {
+  if (complement in obj) {
 ```
 
 You're going to return two indices.
 
-First one is the **value** of You can use `obj.get()`, which will return the value of a key.
-Second, the current index because as soon as the second index is found, the search is over.
+First one is the **value** of the key which is the same number as complement. Second is the current index of the array, because as soon as you find the second one, the iteration is over.
 
 Since you need to return two indeces, use [] so that the indeces will be stored in array.
 
 ```
-    return [obj.get(nums[i]), i]
+    return [obj[complement], i]
   }
 ```
 
-Otherwise, keep adding a number (key) and its index (value) to Map object.
+Otherwise, keep adding a number (key) and its index (value) to the object.
 
 ```
   else {
-    obj.set(complement, i);
+    obj[nums[i]] = i;
   }
 ```
 
-Map will look like this:
+Return an empty array in case none of the condition met.
 
 ```
-// num = [2,7,11,15], target = 9
-
-{
-  7: 0, // complement: index
-  2: 1,
-  2: 2,
-  4: 6
+  return [];
 }
-twoSum([2,7,11,15], 9)
 ```
 
 ## Whole Code
@@ -80,18 +72,15 @@ var twoSum = function(nums, target) {
   var obj = {};
 
   for (var i = 0; i < nums.length; i++) {
+
     var complement = target - nums[i];
 
     if(complement in obj) {
-      console.log("complement[i]", complement[i])
-      return [obj[complement[i]], i]
+      return [obj[complement], i]
     } else {
       obj[nums[i]] = i;
     }
 
-      console.log("obj[nums[i]]", obj[nums[i]])
-  console.log("complement", complement)
-  console.log("obj", obj)
   }
   return [];
 }
