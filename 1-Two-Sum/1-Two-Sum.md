@@ -1,6 +1,6 @@
 ## 1. Two Sum
 
-(https://leetcode.com/problems/two-sum/)[https://leetcode.com/problems/two-sum/]
+[https://leetcode.com/problems/two-sum/]
 
 In this question, I need to return indices of two integers in an array which can add up to target number. For example, if an array is [2,7,11,15] and target is 9, I need to return [0] and [1] because 2 + 7 = 9.
 
