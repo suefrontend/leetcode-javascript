@@ -17,4 +17,18 @@ var isPalindrome = function (x) {
 		return true;
 	}
 };
-isPalindrome(2002);
+
+var isPalindrome = function (x) {
+	if (x < 0) return false;
+	if (x % 10 === 0 && x !== 0) return false;
+
+	var reversed = 0;
+	var original = x;
+
+	while (original > 0) {
+		reversed = reversed * 10 + (original % 10);
+		original = Math.floor(original / 10);
+	}
+
+	return reversed == x;
+};

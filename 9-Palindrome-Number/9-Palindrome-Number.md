@@ -177,5 +177,4 @@ var isPalindrome = function(x) {
   return reversed == x;
 
 }
-isPalindrome(123)
 ```
