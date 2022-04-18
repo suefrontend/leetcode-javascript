@@ -7,3 +7,14 @@ This problem is to check if the provided parantheses are closed with correspondi
 ## Solution
 
 To solve this problem, I'm going to use `hash` and `stack`.
+
+## Whole code
+
+```
+var isValid = function(s) {
+
+
+
+
+};
+```
