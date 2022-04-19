@@ -12,7 +12,11 @@ To solve this problem, I'm going to use `hash` and `stack`.
 
 ```
 var isValid = function(s) {
-
+  var hash = {
+    "(": ")",
+    "[": "]",
+    "{": "}"
+  }
 
 
 
