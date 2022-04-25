@@ -17,8 +17,15 @@ var isValid = function(s) {
     "[": "]",
     "{": "}"
   }
+  var stack = []
 
+  for(var i = 0; i < s.length; i++) {
+    if() {
 
+    } else {
+
+    }
+  }
 
 };
 ```
