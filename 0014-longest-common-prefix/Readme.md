@@ -2,7 +2,7 @@
 
 [Question](https://leetcode.com/problems/longest-common-prefix/)
 
-### Solution
+### How to solve
 
 1. Create a variable prefix to store the common prefix.
 2. Implement two loops: one for iterating through the characters of the first element and another for iterating through the other elements in the array.

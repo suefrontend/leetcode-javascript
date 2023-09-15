@@ -2,7 +2,7 @@
 
 [Question](https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/description/) (Old title: Implement strStr())
 
-### Solution
+### How to solve
 
 1. The loop will only start if the length of the haystack is greater than or equal to the length of the needle.
 2. Create a variable `j` to store the occurrences of the same character.
