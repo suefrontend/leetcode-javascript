@@ -1,6 +1,6 @@
 ## Find the Index of the First Occurrence in a String
 
-[Question](https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/description/)
+[Question](https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/description/) (Old title: Implement strStr())
 
 ### Solution
 
