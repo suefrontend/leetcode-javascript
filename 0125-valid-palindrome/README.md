@@ -2,7 +2,7 @@
 
 [Question](https://leetcode.com/problems/valid-palindrome/)
 
-### How to solve
+### Approach
 
 1. Remove all non-alphabetic characters from the input string using a regular expression. Then, convert it to lowercase and trim any leading or trailing spaces.
 2. Create two pointers to iterate through the string: one starts from the beginning of the string (`left`), and the other starts from the end of the string (`right`).
