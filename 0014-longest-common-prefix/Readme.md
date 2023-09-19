@@ -9,8 +9,6 @@
 3. If the characters at the current position are the same across all elements, append the character to the prefix.
 4. If the characters no longer match, return the prefix.
 
-### Whole code
-
 ```
 var longestCommonPrefix = function(strs) {
     var prefix = "";

@@ -13,8 +13,6 @@
 7. To ensure that the loop has iterated the same number of times as there are characters in the needle, check if `j === needle.length`. This is possible because `j` is incremented only when both characters match.
 8. Return `i` as the index because it represents the starting position in the haystack where the complete needle is first found.
 
-### Whole code
-
 ```
 var strStr = function(haystack, needle) {
 

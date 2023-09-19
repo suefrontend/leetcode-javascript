@@ -12,8 +12,6 @@
 6. If the middle value is the same as the `target`, return `middle`.
 7. If the target is not found in the array, return left. This is because left represents the position where the target should be inserted while preserving the array's sorted order. It points to the first index where the array value is greater than or equal to the target after the loop.
 
-### Whole code
-
 ```
 var searchInsert = function(nums, target) {
 

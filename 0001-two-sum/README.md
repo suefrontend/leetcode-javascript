@@ -10,8 +10,6 @@
 4. If the complement is not found in the `obj`, add the current number and its index as a key-value pair in `obj`.
 5. If the complement is already in `obj`, it means you've found two numbers that add up to the target. Return the indices of both numbers, where one is obtained from `obj`, and the other is the current index `i`.
 
-### Whole code
-
 ```
 var twoSum = function(nums, target) {
 

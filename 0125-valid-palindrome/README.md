@@ -10,8 +10,6 @@
 4. If the characters at the `left` and `right` positions are different, the string is not a palindrome. Break out of the loop and return false.
 5. After finishing the iteration, it signifies that the string is a palindrome. Return true.
 
-### Whole code
-
 ```
 var isPalindrome = function(s) {
     var str = s.replace(/[^a-z0-9]/gi, '').toLowerCase().trim();
