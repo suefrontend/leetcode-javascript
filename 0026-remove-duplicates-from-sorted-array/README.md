@@ -3,3 +3,12 @@
 [Question](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)
 
 ### Approach
+
+1. 
+2. 
+
+```
+var removeDuplicates = function(nums) {
+
+};
+```
