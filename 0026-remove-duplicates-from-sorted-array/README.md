@@ -6,6 +6,7 @@
 
 1.
 2.
+3.
 
 ```
 var removeDuplicates = function(nums) {
