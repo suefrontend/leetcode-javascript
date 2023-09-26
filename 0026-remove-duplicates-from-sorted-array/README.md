@@ -4,9 +4,9 @@
 
 ### Approach
 
-1.
-2.
-3.
+1. 
+2. 
+3. 
 
 ```
 var removeDuplicates = function(nums) {
