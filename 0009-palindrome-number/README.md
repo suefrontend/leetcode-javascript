@@ -3,7 +3,7 @@
 [Question](https://leetcode.com/problems/palindrome-number/)
 
 ### Approach
-1. **Handling Negative Numbers**<br>
+1. **Handling negative numbers**<br>
 If the input number is negative, it can't be a palindrome, so return `false` immediately.
 2. **Copy the original number**<br>
 Create a variable `num` and set it equal to the input number. This is done to preserve the original number and avoid modification.
