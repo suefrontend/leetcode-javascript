@@ -4,15 +4,15 @@
 
 ### Approach
 
-1. **Initialization**
+1. **Initialization**<br>
    Create a variable `result`. This will be used to store the total integer value obtained from the Roman nmeral string.
-2. **Hash Table**
+2. **Hash Table**<br>
    Create a hash table to map Roman numeral symbols to their corresponding integer values.
-3. **For loop**
+3. **For loop**<br>
    Loop through the input Roman numeral string.
-4. **Normal cases**
+4. **Normal cases**<br>
    In most cases, Roman numerals increase from left to right. Simply add its integer value to the `result`.
-5. **Special cases**
+5. **Special cases**<br>
    However, Roman numerals can have exceptions, such as 'IV' (4), 'IX' (9), 'XL' (40), 'XC' (90), 'CD' (400), and 'CM' (900). To handle these cases, compare the current symbol's integer value with the next symbol's value. It the next symbol is greater, substract the current symbol's value from the next symbol's value and add it to `result`.
 6. **Increment `i`**
    To avoid double-counting, increment `i` by 1 and skip processing the next symbol in the loop.
