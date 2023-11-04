@@ -4,15 +4,15 @@
 
 ### Approach
 
-1. **Setting a temporary lowest price**
+1. **Setting a temporary lowest price**<br>
    Create a variable `min` to store the current lowest stock price, initializing it with the first element of the `stokcs` array.
-2. **Initializing profit**
+2. **Initializing profit**<br>
    Create a variable `profit` to temporary hold the largest profit.
-3. **Find the lowest stock price**
+3. **Find the lowest stock price**<br>
    Check if `price[i]` is lower than the first stock price in the array; if so, update it as the new lowest price.
-4. **Calculating profit**
+4. **Calculating profit**<br>
    Calculate the profit by computing `prices[i] - min`. If a larger profit is found, update the `profit` variable.
-5. **Final result**
+5. **Final result**<br>
    Finally, return the calculated profit.
 
 ```
