@@ -10,13 +10,12 @@
 var reverseString = function(s) {
     var left = 0;
     var right = s.length - 1;
-    var tempLeft, tempRight;
+    var temp;
 
     while(left < right) {
-        tempLeft = s[left];
-        tempRight = s[right]
-        s[left] = tempRight;
-        s[right] = tempLeft;
+        temp = s[left];
+        s[left] = s[right];
+        s[right] = temp;
 
         left++;
         right--;
