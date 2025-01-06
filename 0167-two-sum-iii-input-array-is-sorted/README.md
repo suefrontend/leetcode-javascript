@@ -1,4 +1,4 @@
-## Two Sum II - Input Array is Sorted
+## Two Sum II - Input Array is Sorted 
 
 [Question](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted)
 
