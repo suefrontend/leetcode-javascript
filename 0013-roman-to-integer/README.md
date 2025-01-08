@@ -5,7 +5,7 @@
 ### Approach
 
 1. **Initialization**<br>
-   Create a variable `result`. This will be used to store the total integer value obtained from the Roman nmeral string.
+   Create a variable `result`. This will be used to store the total integer value obtained from the Roman numeral string.
 2. **Hash Table**<br>
    Create a hash table to map Roman numeral symbols to their corresponding integer values.
 3. **For loop**<br>
