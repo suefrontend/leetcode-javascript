@@ -2,7 +2,7 @@
 
 [Question](https://leetcode.com/problems/plus-one)
 
-### Approach
+### Approach 
 
 1. **Right-to-Left Traversal**<br>
 Begin by iterating through the digits from right to left, because this is how we add one to a number.
